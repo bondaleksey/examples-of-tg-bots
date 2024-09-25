@@ -37,6 +37,8 @@ async def send_photo_echo(message: Message):
     await message.reply_photo(message.photo[0].file_id)
 
 
+
+
 # Регистрируем хэндлеры
 dp.message.register(process_start_command, Command(commands="start"))
 dp.message.register(process_help_command, Command(commands="help"))
